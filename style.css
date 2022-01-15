@@ -132,7 +132,7 @@ li a {
   text-decoration: none;
   margin-left: 43%;
 }
-
+/* agents */
 #Agents {
   text-align: center;
   font-family: "Montserrat", sans-serif;
@@ -142,4 +142,326 @@ li a {
 .agentdesc {
   text-align: center;
   font-family: "Shadows Into Light", cursive;
+}
+
+.agentspgpic {
+  margin-top: -13%;
+  display: flex;
+  max-width: 400px;
+}
+.jettimg {
+  width: 100%;
+}
+.chamberimg {
+  width: 100%;
+  margin-left: 100%;
+}
+
+.agentname {
+  font-size: 20px;
+  font-family: cursive;
+}
+.jettname {
+  margin-left: 20px;
+  /* animerat */
+  background: linear-gradient(
+    to right,
+    rgb(68, 0, 253) 20%,
+    rgb(43, 100, 223) 40%,
+    rgb(35, 149, 214) 60%,
+    rgb(0, 225, 255) 80%
+  );
+  background-size: 200% auto;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: jettname 2s linear infinite;
+}
+@keyframes jettname {
+  to {
+    background-position: 200% center;
+  }
+}
+
+.chambername {
+  float: right;
+  margin-right: 20px;
+  /* animerat */
+  background: linear-gradient(
+    to right,
+    rgb(253, 0, 118) 20%,
+    rgb(237, 0, 245) 40%,
+    rgb(255, 87, 233) 60%,
+    rgb(248, 147, 231) 80%
+  );
+  background-size: 200% auto;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: chambername 2s linear infinite;
+}
+@keyframes chambername {
+  to {
+    background-position: 200% center;
+  }
+}
+.agentinfo {
+  font-size: 10px;
+  display: flex;
+  justify-content: center;
+  border-style: solid;
+  padding: 10px;
+  width: 20%;
+}
+.agentinfodiv {
+  display: flex;
+  justify-content: center;
+  margin-top: -30%;
+  transition: transform 0.2s;
+}
+
+.agentinfodiv:hover {
+  -ms-transform: scale(1.5);
+  -webkit-transform: scale(1.5);
+  transform: scale(1.5);
+  color: red;
+}
+
+.agentinfophone {
+  display: none;
+}
+
+.agentdesc2 {
+  display: none;
+}
+
+/* ESPORT */
+.wrapper {
+  width: 100%;
+  height: auto;
+  margin-top: 30%;
+  border-top: solid;
+  padding-top: 30px;
+}
+.esporth2 {
+  text-align: center;
+  font-family: "Montserrat", sans-serif;
+  font-size: 50px;
+}
+.esport {
+  display: flex;
+  width: 100%;
+}
+.ranksh3 {
+  display: flex;
+  justify-content: center;
+  font-family: "Shadows Into Light", cursive;
+}
+.ranks {
+  flex-basis: 50%;
+  margin-left: 50px;
+  margin-right: 50px;
+}
+.BIGGEST-TEAMS {
+  margin-left: 50px;
+  margin-right: 50px;
+  flex-basis: 50%;
+}
+.Biggestteamsh3 {
+  display: flex;
+  justify-content: center;
+  font-family: "Shadows Into Light", cursive;
+}
+.esport2 {
+  display: none;
+}
+
+.valrank {
+  width: 100%;
+}
+
+/* gameplay */
+.gameplayh2 {
+  text-align: center;
+  font-family: "Montserrat", sans-serif;
+  font-size: 50px;
+}
+.gameinfo {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+}
+.gameplay {
+  margin-left: 30px;
+  margin-right: 30px;
+}
+
+/* media screen for saker i main */
+@media screen and (max-width: 1000px) {
+  .chamberimg {
+    display: none;
+  }
+  .chambername {
+    display: none;
+  }
+  .agentinfodiv {
+    display: none;
+  }
+  .agentinfophone {
+    display: block;
+    font-size: 30px;
+    display: flex;
+    justify-content: center;
+    border-style: solid;
+    padding: 20px;
+    width: 30%;
+    border-width: 5px;
+    border-color: aqua;
+    background-color: white;
+  }
+  .agentinfomobile {
+    display: flex;
+    justify-content: center;
+    margin-top: -40%;
+  }
+  .jettimg {
+    margin-top: -10%;
+  }
+  .agentdesc {
+    display: none;
+  }
+  .agentdesc2 {
+    display: block;
+    font-size: 50px;
+    text-align: center;
+    font-family: "Shadows Into Light";
+  }
+  .esport {
+    display: none;
+  }
+  .esport2 {
+    display: block;
+    width: 100%;
+    font-size: 30px;
+  }
+  .gameinfo {
+    font-size: 30px;
+  }
+}
+/* footer */
+footer {
+  background: rgb(0, 0, 0);
+  height: auto;
+  width: 100%;
+  font-family: monospace;
+  padding-top: 40px;
+  margin-top: 30px;
+  color: #fff;
+}
+.footersaker {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+}
+.footersaker h3 {
+  font-size: 30px;
+  font-weight: 400;
+  margin-bottom: 15px;
+}
+.footer-content p {
+  max-width: 500px;
+  margin: 10px auto;
+  line-height: 28px;
+  font-size: 14px;
+}
+.sociala {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.sociala li {
+  margin: 10px;
+}
+.sociala a {
+  text-decoration: none;
+  color: #fff;
+}
+.sociala a {
+  font-size: 1.1rem;
+  transition: color 0.4s;
+}
+.sociala a:hover {
+  color: rgb(255, 0, 0);
+}
+
+.footer-bottom {
+  background: #000;
+  width: 100%;
+  padding: 20px 0;
+  text-align: center;
+}
+/*feedback */
+.wrapper2 {
+  background: linear-gradient(-45deg, #810505, #ff3535, #ff4c2d, #ffa034);
+  background-size: 400% 400%;
+  animation: gradient 15s ease infinite;
+  width: 100%;
+  height: 1000px;
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+input[type="text"],
+select,
+textarea {
+  width: 100%;
+  padding: 12px;
+  border: 3px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+}
+
+input[type="submit"] {
+  background-color: #d9ff00;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type="submit"]:hover {
+  background-color: #d9ff00;
+}
+
+.container {
+  border-radius: 5px;
+  background-color: #ffd7d7;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  width: 50%;
+  margin-left: 22%;
+  text-align: center;
+}
+
+.contacth2 {
+  text-align: center;
+  font-family: "Montserrat", sans-serif;
+  font-size: 50px;
+  margin-bottom: 5px;
 }
